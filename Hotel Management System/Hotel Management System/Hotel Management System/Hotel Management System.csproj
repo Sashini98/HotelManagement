@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DEC5CB4A-00E2-43B5-B2B2-9766555DC1B1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Hotel_Management_System</RootNamespace>
+    <AssemblyName>Hotel Management System</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\Bunifu .NET UI Framework 1.5.3\Crack\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework">
+      <HintPath>..\packages\MetroFramework.RunTime.1.2.0.3\lib\net40-Client\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design">
+      <HintPath>..\packages\MetroFramework.Design.1.2.0.3\lib\net40\MetroFramework.Design.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts">
+      <HintPath>..\packages\MetroFramework.Fonts.1.2.0.3\lib\net40\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Banquet Hall.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Banquet Hall.Designer.cs">
+      <DependentUpon>Banquet Hall.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Book.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Book.Designer.cs">
+      <DependentUpon>Book.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cancel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cancel.Designer.cs">
+      <DependentUpon>cancel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Check out.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Check out.Designer.cs">
+      <DependentUpon>Check out.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Front.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Front.Designer.cs">
+      <DependentUpon>Front.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hotel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hotel.Designer.cs">
+      <DependentUpon>Hotel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="userLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userLogin.Designer.cs">
+      <DependentUpon>userLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view banquet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view banquet.Designer.cs">
+      <DependentUpon>view banquet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view room.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view room.Designer.cs">
+      <DependentUpon>view room.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Banquet Hall.resx">
+      <DependentUpon>Banquet Hall.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Book.resx">
+      <DependentUpon>Book.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cancel.resx">
+      <DependentUpon>cancel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Check out.resx">
+      <DependentUpon>Check out.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Front.resx">
+      <DependentUpon>Front.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hotel.resx">
+      <DependentUpon>Hotel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="userLogin.resx">
+      <DependentUpon>userLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view banquet.resx">
+      <DependentUpon>view banquet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view room.resx">
+      <DependentUpon>view room.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MetroFramework.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
